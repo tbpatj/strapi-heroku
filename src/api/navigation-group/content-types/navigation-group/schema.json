@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navigation_groups",
+  "info": {
+    "singularName": "navigation-group",
+    "pluralName": "navigation-groups",
+    "displayName": "navigation_groups"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

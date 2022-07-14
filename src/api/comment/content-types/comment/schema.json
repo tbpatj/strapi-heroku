@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "singularName": "comment",
+    "pluralName": "comments",
+    "displayName": "comments",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "post_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::post.post"
+    },
+    "author": {
+      "type": "string"
+    },
+    "author_email": {
+      "type": "string"
+    },
+    "author_url": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "status": {
+      "type": "integer"
+    }
+  }
+}

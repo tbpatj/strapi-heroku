@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navigations",
+  "info": {
+    "singularName": "navigation",
+    "pluralName": "navigations",
+    "displayName": "navigations"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "link_text": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "navigation_group": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::navigation-group.navigation-group"
+    },
+    "click_count": {
+      "type": "integer"
+    }
+  }
+}
