@@ -18,9 +18,6 @@
     "content": {
       "type": "richtext"
     },
-    "category": {
-      "type": "integer"
-    },
     "image": {
       "type": "string"
     },
@@ -31,6 +28,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
+    },
+    "post_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::post-category.post-category"
     }
   }
 }
