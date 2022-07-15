@@ -6,11 +6,13 @@
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
-    "old-start": "strapi start",
+    "fixdoc": "node documentation/docfix.js",
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "rdme": "^7.3.0"
+  },
   "dependencies": {
     "@strapi/plugin-documentation": "^4.2.3",
     "@strapi/plugin-i18n": "4.2.3",
