@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testings",
+  "info": {
+    "singularName": "testing",
+    "pluralName": "testings",
+    "displayName": "testing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "test1": {
+      "type": "string"
+    },
+    "test2": {
+      "type": "richtext"
+    },
+    "test3": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "date2": {
+      "type": "date"
+    },
+    "myBool": {
+      "type": "boolean"
+    },
+    "jsonTest": {
+      "type": "json"
+    },
+    "emailTEst": {
+      "type": "email"
+    },
+    "passwordTest": {
+      "type": "password"
+    },
+    "EnemerationTest": {
+      "type": "enumeration",
+      "enum": [
+        "morning",
+        "noon",
+        "evening"
+      ]
+    },
+    "user_id": {
+      "type": "uid",
+      "targetField": "test1"
+    },
+    "component2": {
+      "displayName": "componennt1",
+      "type": "component",
+      "repeatable": false,
+      "component": "string.componennt1"
+    }
+  }
+}
